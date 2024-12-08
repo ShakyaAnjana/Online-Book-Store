@@ -1,0 +1,160 @@
+body {
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.main {
+  /* border: 2px solid black; */
+  width: 98%;
+  display: block;
+  height:fit-content;
+  margin-top: 15vh;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+.sellbutton{
+  margin: auto;
+  display: inline-block;
+  /* border: 2px solid red; */
+  width: 99%;
+  height: auto;
+}
+.sell_btn{
+  /* border: 2px solid white; */
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  float: right;
+}
+.sell_btn button{
+  width: 20vh;
+  height: 6vh;
+}
+
+.display{
+  /* border: 2px solid red; */
+  display: inline-block;
+  width: 98%;
+  margin: 15px;
+  background-color: rgba(10, 0, 153, 0.1);
+
+}
+.display::-webkit-scrollbar {
+  display: none;
+}
+.dis{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap; 
+  overflow-y: scroll;
+  z-index: 1;
+}
+.dis::-webkit-scrollbar {
+  display: none;
+}
+.alb{
+  height: fit-content;
+  width: 25vh;
+  box-shadow: 0px 2px 5px #012f0c;;
+  display: inline-block;
+  margin: 15px;
+  background-color: #0084ac;
+  /* z-index: 1; */
+  padding: 5px;
+  }
+  .alb img{
+    margin-top: 0%;
+    height: 35vh;
+    width: 25vh;
+    overflow: auto;
+  }
+  .outline {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: rgb(255, 255, 255);
+  }
+.des{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.sell_book {
+  position: fixed;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgb(209, 209, 209);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+/* .sell_book form input{
+width: 50vh;
+} */
+.book_isbn{
+  width: 60vh;
+}
+.book_name{
+  width: 60vh;
+}
+.book_author{
+  width: 60vh;
+}
+.book_publication{
+  width: 60vh;
+}
+.book_price{
+  width: 60vh;
+}
+.add{
+  width: 60vh;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item label {
+  margin-right: 10px; /* Adjust as needed */
+}
+.book_quantity{
+  width:10vh;
+
+}
+
+.sell_book.hidden1{
+display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+#cross{
+float:right;
+}
+#cross:hover{
+color: red;
+}

@@ -1,0 +1,202 @@
+
+body {
+  background-attachment: fixed;
+  background-color: rgba(10, 0, 153, 0.1);
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.main {
+  width: 100%;
+  display: block;
+  height:fit-content;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.book-details {
+  display: flex;
+  align-items: center;
+}
+.pic {
+  height: fit-content;
+  width: 50vh;
+  box-shadow: 0px 2px 5px #012f0c;
+  display: inline-block;
+  margin: 15px;
+  margin-top: 20px;
+  margin-right: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.pic:hover {
+  transform: scale(1.05);
+}
+
+.pic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #fff, #f8f8f8);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.pic img {
+  margin-top: 0%;
+  height: 80vh;
+  width: 50vh;
+  overflow: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.des {
+  margin-left: 30px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+p:first-of-type {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+p:last-of-type {
+  font-style: italic;
+}
+.sell_btn button {
+width: 20vh;
+height: 6vh;
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.sell_btn button:hover {
+background-color: #45a049;
+}
+
+.sell_btn input[type="submit"] {
+  float: right;
+width: 20vh;
+height: 6vh;
+background-color: #f44336;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.sell_btn input[type="submit"]:hover {
+background-color: #d32f2f;
+}
+
+.update_book {
+  position: fixed;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgb(209, 209, 209);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+.book_isbn{
+  width: 60vh;
+}
+.book_name{
+  width: 60vh;
+}
+.book_author{
+  width: 60vh;
+}
+.book_publication{
+  width: 60vh;
+}
+.book_price{
+  width: 60vh;
+}
+.book_quantity{
+  width:10vh;
+
+}
+.update{
+  width: 60vh;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item label {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.update_book.hidden1{
+display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  display: none;
+}
+
+/* .show-overlay {
+  display: block;
+} */
+#cross{
+float:right;
+}
+#cross:hover{
+color: red;
+}
+
+  
